@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        body {
+            background-color: rgb(9, 20, 233);
+        }
+        header {
+            margin-bottom: 15px;
+            
+        }
+
+        header h1 {
+            text-align: center;
+        }
+
+        .item1 {
+            grid-area: header;
+            display: grid;
+            grid-template-columns: 1fr 3fr 1fr;
+            grid-template-areas:
+                'p1   p2  p3';
+        }
+
+
+        .item2 {
+            grid-area: menu;
+        }
+
+        .item3 {
+            grid-area: main;
+        }
+
+        .item4 {
+            grid-area: right;
+        }
+
+        .item5 {
+            grid-area: footer;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-areas:
+                'header header header header header header'
+                'menu main main main right right'
+                'menu footer footer footer footer footer';
+            gap: 10px;
+            background-color: #161183;
+            padding: 10px;
+        }
+
+        .item1 h1 {
+            grid-area: p1;
+        }
+
+        #par {
+            grid-area: p2;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #par img {
+            width: 50%;
+        }
+
+        .item1 p {
+            grid-area: p3;
+        }
+
+        .grid-container>div {
+            background-color: rgba(157, 200, 238, 0.8);
+            text-align: center;
+            padding: 20px 0;
+            font-size: 30px;
+        }
+
+        #unopar {
+            margin-right: 20px;
+            margin-top: 160px;
+        }
+
+        .fa {
+            padding: 7px;
+            font-size: 30px;
+            width: 30px;
+            text-align: center;
+            text-decoration: none;
+            background-color: rgb(101, 119, 184);
+            border-radius: 80px;
+            }
+
+            @media only screen and (max-width: 600px) {
+                .grid-container, .item1 {
+                    display: flex;
+                    flex-wrap: wrap;
+                }
+            }
+
+    </style>
+    <title>Valle d'Aosta</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>Festival di Sanremo 2024</h1>
+    </header>
+
+    <div class="grid-container">
+        <div class="item1">
+            <h3> Vincitrice: Angelina Mango </h3>
+            <p id="par"><img src="Sanremo.avif" alt=""></p>
+            <p id="unopar">Clicca qui per <a href="https://it.wikipedia.org/wiki/Angelina_Mango" target="_blank" id="info">la sua pagina Wikipedia</a> </p>
+        </div>
+        <div class="item2">
+            Canzoni migliori:<br> 1.La Noia<br> 2.Ch to dic a fa<br> 3. Ci pensiamo domani
+        </div>
+        <div class="item3">
+            'La noia', il brano ha ottenuto recensioni generalmente favorevoli da parte della critica musicale italiana
+            Andrea Laffranchi del Corriere della Sera descrive la canzone come «allegra, fresca, spensierata» con «un'anima latina» e «un ritornello che profuma di tradizione mediterranea». Silvia Danielli di Billboard Italia scrive che le sonorità si associano al reggaeton e alla cumbia, trovandola «un’ottima hit» con un testo «interessante».
+        </div>
+        <div class="item4"> Figlia del cantautore Mango e di Laura Valente, ex cantante dei Matia Bazar, Angelina è cresciuta a Lagonegro, in provincia di Potenza, con il fratello maggiore Filippo, nato nel 1995; entrambi condividono la passione per la musica, seguendo le orme dei genitori. Durante l'infanzia è stata influenzata musicalmente da Rolling Stones, Nirvana e Aretha Franklin. Ha intrapreso le sue prime esperienze musicali con il padre, con il quale ha eseguito una reinterpretazione di Get Back dei Beatles, dall'album L'amore è invisibile (2014), ultima produzione discografica di Mango.
+           
+        </div>
+        <div class="item5"><a href="#" class="fa fa-facebook"></a>  <a href="#" class="fa fa-instagram"></a> <a href="#" class="fa fa-twitter"></a>
+        </div>
+    </div>
+
+</body>
+
+</html>
